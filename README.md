@@ -32,9 +32,10 @@ When a task is added via the form the description and due date should be added t
 *Add the deployed project URL after walking through the hosting steps in class*
  set up outline
  pick cards
+ add img to form using unsplash
  use bootstrap for buttons
  use console.log to check that information is reading correctly in the console
  addEventListener
- 
- 
+
+ Use grid display to layout three distinct elements : a form to add tasks, an element to display urgent tasks, and an element to display non-urgent tasks. The form should have a text field for the task description, a selection field to choose "urgent" or "non-urgent", and a date field to set a task due date. Use bootstrap styling throughout your page.
 

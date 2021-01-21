@@ -12,20 +12,26 @@
 <!-- linked Googlefonts to heading to apply updated font for header text  -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+
 <body>
     <h1>21 01 20 HTML CSS JS Project One</h1>
     <!-- created div with id class container for form -->
     <div id="container">
         <div id="form">
+            <h4>Task Form</h4>
+            <div id="gridImage">
+                <img src="https://images.unsplash.com/photo-1574269252437-eaf1ccbbc298?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c3RpY2t5JTIwbm90ZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="calendar and sticky notes">
+            </div>
+
             <form>
                 <!-- use div to format my wireframe -->
                 <div>
-                
                     <label for="assignedTo">Task assigned to: </label>
                     <input type="text" id="assignedTo">
                 </div>
                 <div>
-                    
+
                     <label for="taskAssigned">Task : </label>
                     <input type="text" id="taskAssigned">
                 </div>
@@ -40,15 +46,11 @@
         <div>
             <!-- applied id to reference h4 header Urgent -->
             <h4 id="urgentTask">Urgent</h4>
-            <!-- add button -->
-            <button id="addBtn" class="btn btn-primary">Add</button>
         </div>
 
         <div>
             <!-- applied id to reference h4 header Not Urgent -->
             <h4 id="notUrgent">Not Urgent</h4>
-            <!-- remove button -->
-            <button id="removeBtn" class="btn btn-danger">Remove</button>
         </div>
     </div>
     <script src="./script.js"></script>

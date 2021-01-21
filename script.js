@@ -13,15 +13,11 @@ let submitBtn = document.querySelector("#submitBtn");
 // selected h4 using id of urgent task using querySelector
 let urgentTask = document.querySelector("#urgentTask");
 // console.log(urgentTask);
-// selected add button using querySelector
-let addBtn = document.querySelector("#addBtn");
-// console.log(addBtn);
 // selected h4 using id of not urgent using querySelector
 let notUrgent = document.querySelector("#notUrgent");
 // console.log(notUrgent);
-// remove button using querySelector
-let removeBtn = document.querySelector("#removeBtn");
-// console.log(removeBtn);
+
+
 
 submitForm = (event) => {
     event.preventDefault(); // stops page from reloading
