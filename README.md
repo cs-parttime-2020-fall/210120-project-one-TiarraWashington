@@ -33,5 +33,8 @@ When a task is added via the form the description and due date should be added t
  set up outline
  pick cards
  use bootstrap for buttons
+ use console.log to check that information is reading correctly in the console
+ addEventListener
+ 
  
 
