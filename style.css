@@ -1,12 +1,13 @@
 body {
     /* /* background-color: red;  check that files are linked */
-    font-family: sans-serif;
+    /* update h1 using Googlefonts */
+    font-family: 'Coda Caption', sans-serif;
     text-align: center;  
 }
 
 #container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: ( 4fr 2fr 2fr);
     margin: 2%;
     padding: 1%;
 }
@@ -18,6 +19,7 @@ body {
 
 form > div {
     padding: 2%;
+    text-align: center;
 }
 
 button {

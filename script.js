@@ -5,10 +5,19 @@ let assignedTo = document.querySelector("#assignedTo");
 let taskAssigned = document.querySelector("#taskAssigned");
 // selected checkbox using querySelector
 let istaskUrgent = document.querySelector("#istaskUrgent");
-//
-let buttn = document.querySelectorAll(".btn btn-primary");
-// 
-let buttton = document.querySelectorAll(".btn btn-danger");
+// console.log(assignedTo); console.log(taskAssigned);console.log(istaskUrgent);
+let submitBtn = document.querySelector("#submitBtn");
+// console.log(submitBtn);
+
+let urgentTask = document.querySelector("#urgentTask");
+// console.log(urgentTask);
+let addBtn = document.querySelector("#addBtn");
+// console.log(addBtn);
+
+let notUrgent = document.querySelector("#notUrgent");
+// console.log(notUrgent);
+let removeBtn = document.querySelector("#removeBtn");
+// console.log(removeBtn);
 
 submitForm = (event) => {
     event.preventDefault(); // stops page from reloading
@@ -16,13 +25,13 @@ submitForm = (event) => {
     console.log(taskAssigned.value);
     console.log(istaskUrgent.checked);
     if (istaskUrgent.checked){ // will go back and correct
-        assignedTo.innerHTML += `<div>${assignedTo.value} : ${taskAssigned.value} `
+        urgentTask.innerHTML += `<div>${assignedTo.value} : ${taskAssigned.value} `
 } else {
-    taskAssigned.innerHTML += `<div>${assignedTo.value} : ${taskAssigned.value} `
+    notUrgent.innerHTML += `<div>${assignedTo.value} : ${taskAssigned.value} `
 }
 // clear values 
 assignedTo.value = ""
 taskAssigned.value = ""
-// 
+}
 istaskUrgent.addEventListener("click", submitForm);
 
