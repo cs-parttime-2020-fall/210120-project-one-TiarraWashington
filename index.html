@@ -9,38 +9,45 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- linked Googlefonts to heading to apply updated font for header text  -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 <body>
     <h1>21 01 20 HTML CSS JS Project One</h1>
+    <!-- created div with id class container for form -->
     <div id="container">
         <div id="form">
             <form>
+                <!-- use div to format my wireframe -->
                 <div>
-                    <!--  -->
+                
                     <label for="assignedTo">Task assigned to: </label>
                     <input type="text" id="assignedTo">
                 </div>
                 <div>
-                    <!--  -->
+                    
                     <label for="taskAssigned">Task : </label>
                     <input type="text" id="taskAssigned">
                 </div>
                 <!--checkbox for isUrgent input before label to position checkbox to the left-->
                 <input type="checkbox" id="istaskUrgent">
                 <label for="istaskUrgent">Is Task Urgent</label>
-
+                <!-- submit button -->
                 <button id="submitBtn" class="btn btn-success">Submit</button>
         </div>
         </form>
 
         <div>
+            <!-- applied id to reference h4 header Urgent -->
             <h4 id="urgentTask">Urgent</h4>
+            <!-- add button -->
             <button id="addBtn" class="btn btn-primary">Add</button>
         </div>
 
         <div>
+            <!-- applied id to reference h4 header Not Urgent -->
             <h4 id="notUrgent">Not Urgent</h4>
+            <!-- remove button -->
             <button id="removeBtn" class="btn btn-danger">Remove</button>
         </div>
     </div>
