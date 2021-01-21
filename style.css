@@ -1,20 +1,24 @@
 body {
     /* /* background-color: red;  check that files are linked */
     /* update h1 using Googlefonts */
-    font-family: 'Coda Caption', sans-serif;
+    font-family: 'Hachi Maru Pop', cursive;
     text-align: center;  
+}
+
+h4 {
+    font-family: sans-serif;
 }
 
 #container {
     display: grid;
-    grid-template-columns: ( 4fr 2fr 2fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 2%;
-    padding: 1%;
 }
 
 #container > div {
-    border: 5px solid purple;
+    border: 6px solid purple;
     text-align: center;
+    padding: 2%;
 }
 
 form > div {
