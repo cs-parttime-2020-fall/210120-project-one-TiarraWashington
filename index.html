@@ -25,16 +25,27 @@
             </div>
 
             <form>
-                <!-- use div to format my wireframe -->
                 <div>
-                    <label for="assignedTo">Task assigned to: </label>
-                    <input type="text" id="assignedTo">
-                </div>
-                <div>
-
-                    <label for="taskAssigned">Task : </label>
+                    <label for="taskAssigned">Task Description : </label>
                     <input type="text" id="taskAssigned">
                 </div>
+
+                <!-- date field - date input -->
+                <div>
+                    <label for="taskdueDate">Task Due Date : </label>
+                    <input type="date" name="taskdate" id="taskdueDate">
+                </div>
+
+                <!-- cohort selection - selection + options -->
+                <div>
+                    <label for="taskUrgency">Selection</label>
+                    <select name="urgent/noturgent" id="taskUrgency">
+                        <option value="0">---</option>
+                        <option value="1">Urgent</option>
+                        <option value="2">Not Urgent</option>
+                    </select>
+                </div>
+
                 <!--checkbox for isUrgent input before label to position checkbox to the left-->
                 <input type="checkbox" id="istaskUrgent">
                 <label for="istaskUrgent">Is Task Urgent</label>
