@@ -30,4 +30,8 @@ When a task is added via the form the description and due date should be added t
 ### Site URL
 
 *Add the deployed project URL after walking through the hosting steps in class*
+ set up outline
+ pick cards
+ use bootstrap for buttons
+ 
 
