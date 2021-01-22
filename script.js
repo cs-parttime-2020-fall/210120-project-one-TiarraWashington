@@ -29,15 +29,15 @@ submitForm = (event) => {
     console.log(taskdueDate.value);
     console.log(taskUrgency.value);
     // append values
-    if (urgent = true) { 
+    if (taskUrgency.value == "urgent") { 
         urgentTask.innerHTML += `<div> Task : ${taskAssigned.value} : Due Date : ${taskdueDate.value}`
-    } else  () { // stuck on else
+    } else { 
     notUrgent.innerHTML += `<div> Task : ${taskAssigned.value} : Due Date : ${taskdueDate.value}`
     }
 // clear values 
-taskAssigned.value = ""
-taskdueDate.value = ""
+taskAssigned.value = "";
+taskdueDate.value = "";
 }
 // added an event listener that will update when chechbox is checked
 submitBtn.addEventListener("click", submitForm);
-
+submitBtn.addEventListener("onclick", ;
