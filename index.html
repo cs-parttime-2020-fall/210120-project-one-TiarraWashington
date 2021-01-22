@@ -14,11 +14,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 
 <body>
+    <span >
     <h1>21 01 20 HTML CSS JS Project One</h1>
+    </span>
     <!-- created div with id class container for form -->
     <div id="container">
         <div id="form">
-            <h4>Task Form</h4>
+            <h2>Task Form</h2>
             <div id="gridImage">
                 <img src="https://images.unsplash.com/photo-1574269252437-eaf1ccbbc298?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c3RpY2t5JTIwbm90ZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                     alt="calendar and sticky notes">
@@ -36,19 +38,16 @@
                     <input type="date" name="taskdate" id="taskdueDate">
                 </div>
 
-                <!-- cohort selection - selection + options -->
+                <!-- selection items for dropbox -->
                 <div>
                     <label for="taskUrgency">Selection</label>
-                    <select name="urgent/noturgent" id="taskUrgency">
-                        <option value="0">---</option>
-                        <option value="1">Urgent</option>
-                        <option value="2">Not Urgent</option>
+                    <select name= "urgent non-urgent" id="taskUrgency">
+                        <option value="clear input">---</option>
+                        <option value="urgent">Urgent</option>
+                        <option value="noturgent">Not Urgent</option>
                     </select>
                 </div>
 
-                <!--checkbox for isUrgent input before label to position checkbox to the left-->
-                <input type="checkbox" id="istaskUrgent">
-                <label for="istaskUrgent">Is Task Urgent</label>
                 <!-- submit button -->
                 <button id="submitBtn" class="btn btn-success">Submit</button>
         </div>

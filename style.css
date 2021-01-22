@@ -6,6 +6,7 @@ body {
 }
 
 h4 {
+    text-decoration: underline;
     font-family: sans-serif;
 }
 /* used grid template columns with 3 columns of equal length for wireframe added margin to add spacing outside the container */
@@ -33,6 +34,7 @@ button {
     margin: 1%;
 }
 
+/*  changed width of image so that all of my form content fit */
 img {
     width: 50%;
 }

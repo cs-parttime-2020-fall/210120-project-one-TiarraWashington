@@ -1,11 +1,13 @@
 console.log(`21 01 20 HTML CSS JS Project One`);
 
 // selected input using querySelector
-let assignedTo = document.querySelector("#assignedTo");
 let taskAssigned = document.querySelector("#taskAssigned");
+let taskdueDate = document.querySelector("#taskdueDate");
+
+// selected task due date using querySelector
+let taskUrgency = document.querySelector("#taskUrgency");
 // selected checkbox using querySelector
-let istaskUrgent = document.querySelector("#istaskUrgent");
-// console.log(assignedTo); console.log(taskAssigned);console.log(istaskUrgent);
+console.log(taskAssigned); console.log(taskdueDate); console.log(taskUrgency);
 // selected submit button using querySelector
 let submitBtn = document.querySelector("#submitBtn");
 // console.log(submitBtn);
@@ -21,19 +23,21 @@ let notUrgent = document.querySelector("#notUrgent");
 
 submitForm = (event) => {
     event.preventDefault(); // stops page from reloading
+
     // console logged information to make sure it was reading correctly in the console
-    console.log(assignedTo.value);
     console.log(taskAssigned.value);
-    console.log(istaskUrgent.checked); // used check property to
-    if (istaskUrgent.checked) { // if checkbox is checked update value of urgent task display element by appending form submission
-        urgentTask.innerHTML += `<div>${assignedTo.value} : ${taskAssigned.value} `
-    } else { // if checkbox is not checked update value of not urgent task display element by appending form submission
-        notUrgent.innerHTML += `<div>${assignedTo.value} : ${taskAssigned.value} `
+    console.log(taskdueDate.value);
+    console.log(taskUrgency.value);
+    // append values
+    if (urgent = true) { 
+        urgentTask.innerHTML += `<div> Task : ${taskAssigned.value} : Due Date : ${taskdueDate.value}`
+    } else  () { // stuck on else
+    notUrgent.innerHTML += `<div> Task : ${taskAssigned.value} : Due Date : ${taskdueDate.value}`
     }
-    // clear values 
-    assignedTo.value = ""
-    taskAssigned.value = ""
-} 
+// clear values 
+taskAssigned.value = ""
+taskdueDate.value = ""
+}
 // added an event listener that will update when chechbox is checked
-istaskUrgent.addEventListener("click", submitForm);
+submitBtn.addEventListener("click", submitForm);
 
