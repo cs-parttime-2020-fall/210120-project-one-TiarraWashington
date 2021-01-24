@@ -3,13 +3,14 @@ console.log(`21 01 20 HTML CSS JS Project One`);
 // selected input using querySelector
 let taskAssigned = document.querySelector("#taskAssigned");
 let taskdueDate = document.querySelector("#taskdueDate");
-
-// selected task due date using querySelector
-let taskUrgency = document.querySelector("#taskUrgency");
-// console.log(taskAssigned); console.log(taskdueDate); console.log(taskUrgency);
 // selected submit button using querySelector
 let submitBtn = document.querySelector("#submitBtn");
 // console.log(submitBtn);
+let taskUrgency = document.querySelectorAll("#taskUrgency");
+let urg = document.querySelector("#urg");
+let noturg = document.querySelector("#noturg");
+// used console log to make sure the correct elements are running in the browser
+// console.log(taskAssigned); console.log(taskdueDate); console.log(urg); console.log(noturg);
 
 // selected h4 using id of urgent task using querySelector
 let urgentTask = document.querySelector("#urgentTask");
@@ -18,6 +19,9 @@ let urgentTask = document.querySelector("#urgentTask");
 let notUrgent = document.querySelector("#notUrgent");
 // console.log(notUrgent);
 
+function hide(){
+    se
+}
 
 submitForm = (event) => {
     event.preventDefault(); // stops page from reloading
@@ -26,22 +30,22 @@ submitForm = (event) => {
     console.log(taskAssigned.value);
     console.log(taskdueDate.value);
     console.log(taskUrgency.value);
-    
 
     // append values
-    if (taskUrgency.value == "urgent") { 
+    if (taskUrgency.value == "Urgent") {
         urgentTask.innerHTML += `<div> Task : ${taskAssigned.value} : Due Date : ${taskdueDate.value}`
     } else {
-    notUrgent.innerHTML += `<div> Task : ${taskAssigned.value} : Due Date : ${taskdueDate.value}`
+        notUrgent.innerHTML += `<div> Task : ${taskAssigned.value} : Due Date : ${taskdueDate.value}`
     }
-
-    
-// clear values 
-taskAssigned.value = "";
-taskdueDate.value = "";
-taskUrgency.value = "Clear form";
+  
+    // clear values from fields by referencing value equal to empty strings
+    taskAssigned.value = "";
+    taskdueDate.value = "";
+    // clear property from fields by referencing value name
+    taskUrgency.value = "Clear form";
 }
-// added an event listener that will update when submit button is clicked
+// added an event listener that will output form submission
 submitBtn.addEventListener("click", submitForm);
-
+urg.addEventListener("click", hide);
+noturg.addEventListener("click", hide);
 
