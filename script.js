@@ -6,8 +6,7 @@ let taskdueDate = document.querySelector("#taskdueDate");
 
 // selected task due date using querySelector
 let taskUrgency = document.querySelector("#taskUrgency");
-// selected checkbox using querySelector
-console.log(taskAssigned); console.log(taskdueDate); console.log(taskUrgency);
+// console.log(taskAssigned); console.log(taskdueDate); console.log(taskUrgency);
 // selected submit button using querySelector
 let submitBtn = document.querySelector("#submitBtn");
 // console.log(submitBtn);
@@ -20,7 +19,6 @@ let notUrgent = document.querySelector("#notUrgent");
 // console.log(notUrgent);
 
 
-
 submitForm = (event) => {
     event.preventDefault(); // stops page from reloading
 
@@ -28,8 +26,9 @@ submitForm = (event) => {
     console.log(taskAssigned.value);
     console.log(taskdueDate.value);
     console.log(taskUrgency.value);
-    // append values
     
+
+    // append values
     if (taskUrgency.value == "urgent") { 
         urgentTask.innerHTML += `<div> Task : ${taskAssigned.value} : Due Date : ${taskdueDate.value}`
     } else {
@@ -42,7 +41,7 @@ taskAssigned.value = "";
 taskdueDate.value = "";
 taskUrgency.value = "Clear form";
 }
-// added an event listener that will update when chechbox is checked
+// added an event listener that will update when submit button is clicked
 submitBtn.addEventListener("click", submitForm);
-// submitBtn.addEventListener("onclick", ;
+
 

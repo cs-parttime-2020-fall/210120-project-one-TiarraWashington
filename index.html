@@ -14,8 +14,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 
 <body>
-    <span >
-    <h1>21 01 20 HTML CSS JS Project One</h1>
+    <span>
+        <h1>21 01 20 HTML CSS JS Project One</h1>
     </span>
     <!-- created div with id class container for form -->
     <div id="container">
@@ -25,34 +25,34 @@
                 <img src="https://images.unsplash.com/photo-1574269252437-eaf1ccbbc298?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c3RpY2t5JTIwbm90ZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                     alt="calendar and sticky notes">
             </div>
-           
-                <div>
-                    <label for="taskAssigned">Task Description : </label>
-                    <input type="text" id="taskAssigned">
-                </div>
 
-                <!-- date field - date input -->
-                <div>
-                    <label for="taskdueDate">Task Due Date : </label>
-                    <input type="date" name="taskdate" id="taskdueDate">
-                </div>
+            <div>
+                <label for="taskAssigned">Task Description : </label>
+                <input type="text" id="taskAssigned">
+            </div>
 
-                <!-- selection items for dropbox -->
-                <div>
-                    <label for="taskUrgency">Selection</label>
-                    <select name= "urgent non-urgent" id="taskUrgency">
-                        <option value="Clear form">---</option>
-                        <option  value="urgent">Urgent</option>
-                        <option value="noturgent">Not Urgent</option>
-                    </select>
-                </div>
+            <!-- date field - date input -->
+            <div>
+                <label for="taskdueDate">Task Due Date : </label>
+                <input type="date" name="taskdate" id="taskdueDate">
+            </div>
 
-                <!-- submit button -->
-                <button id="submitBtn" class="btn btn-success">Submit</button>
+            <!-- selection items for dropbox -->
+            <div>
+                <label for="taskUrgency">Task Urgency :</label>
+                <select name="urgent non-urgent" id="taskUrgency">
+                    <option value="Clear form">---</option>
+                    <option value="urgent">Urgent</option>
+                    <option value="noturgent">Not Urgent</option>
+                </select>
+            </div>
+
+            <!-- submit button -->
+            <button id="submitBtn" class="btn btn-success">Submit</button>
 
         </div>
         </form>
-        
+
         <div id="urgentTask">
             <!-- applied id to reference h4 header Urgent -->
             <h4>Urgent</h4>

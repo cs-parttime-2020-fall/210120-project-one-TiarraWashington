@@ -14,18 +14,25 @@ h4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 2%;
+    padding: 2%;
 }
 /* added border, center aligned text, and added padding to add spacing inside each elements nested inside the container div */
 #container > div {
     border: 6px solid purple;
     text-align: center;
     padding: 2%;
+    margin: 2%;
 }
 
 /* added padding to add space to each element nested inside the form div and centered text */
 form > div {
     padding: 2%;
+    margin: 2%;
     text-align: center;
+}
+
+#taskUrgency {
+    margin: 2%;
 }
 
 /* added border radius to give button a round shape added margin to added spacing between button and elements of container  */
