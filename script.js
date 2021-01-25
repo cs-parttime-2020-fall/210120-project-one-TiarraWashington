@@ -6,9 +6,20 @@ let taskdueDate = document.querySelector("#taskdueDate");
 // selected submit button using querySelector
 let submitBtn = document.querySelector("#submitBtn");
 // console.log(submitBtn);
+
+// selected task in the urgent and non-urgent task list using querySelector
 let taskUrgency = document.querySelectorAll("#taskUrgency");
 let urg = document.querySelector("#urg");
 let noturg = document.querySelector("#noturg");
+
+
+function hide(){
+}
+for (i =0; i < taskUrgency.length; i++) { // iterate through task
+    while (true) {
+    confirm("Do you want to delete clicked task");
+}
+
 // used console log to make sure the correct elements are running in the browser
 // console.log(taskAssigned); console.log(taskdueDate); console.log(urg); console.log(noturg);
 
@@ -18,10 +29,6 @@ let urgentTask = document.querySelector("#urgentTask");
 // selected h4 using id of not urgent using querySelector
 let notUrgent = document.querySelector("#notUrgent");
 // console.log(notUrgent);
-
-function hide(){
-    se
-}
 
 submitForm = (event) => {
     event.preventDefault(); // stops page from reloading
@@ -46,6 +53,5 @@ submitForm = (event) => {
 }
 // added an event listener that will output form submission
 submitBtn.addEventListener("click", submitForm);
-urg.addEventListener("click", hide);
-noturg.addEventListener("click", hide);
+taskUrgency.addEventListener("click", hide);
 

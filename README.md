@@ -15,7 +15,7 @@ You must have the following content to meet the project requirements but you are
 
 Use grid display to layout three distinct elements : a form to add tasks, an element to display urgent tasks, and an element to display non-urgent tasks. The form should have a text field for the task description, a selection field to choose "urgent" or "non-urgent", and a date field to set a task due date. Use bootstrap styling throughout your page.
 
-When a task is added via the form the description and due date should be added to the appropriate element depending on if you chose "urgent" or "non-urgent" from the selection field. The form fields should also clear out when the form is submitted. When a task displayed in either element displaying tasks is clicked a dialog box should appear asking you to confirm if you want to remove the clicked task. If you choose "ok" the clicked tasks should be hidden. Hint : This can be preformed using `event.target` and `setAttribute()`
+When a task is added via the form the description and due date should be added to the appropriate element depending on if you chose "urgent" or "non-urgent" from the selection field. The form fields should also clear out when the form is submitted. When a task is displayed in either element displaying tasks is clicked a dialog box should appear asking you to confirm if you want to remove the clicked task. If you choose "ok" the clicked tasks should be hidden. Hint : This can be preformed using `event.target` and `setAttribute()`
 
 ## Resources
 - [Rubric](https://docs.google.com/document/d/1ZvMGs0U770Tahzy1vKa2rh1uCJRPB-MydvVmzz6TD3E/edit?usp=sharing)
