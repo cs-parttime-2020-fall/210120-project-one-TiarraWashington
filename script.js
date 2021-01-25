@@ -12,11 +12,10 @@ let taskUrgency = document.querySelectorAll("#taskUrgency");
 let urg = document.querySelector("#urg");
 let noturg = document.querySelector("#noturg");
 
-
+// stuck on last two steps
 function hide(){
-}
 for (i =0; i < taskUrgency.length; i++) { // iterate through task
-    while (true) {
+    while () {
     confirm("Do you want to delete clicked task");
 }
 
