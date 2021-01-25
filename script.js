@@ -8,14 +8,16 @@ let submitBtn = document.querySelector("#submitBtn");
 // console.log(submitBtn);
 
 // selected task in the urgent and non-urgent task list using querySelector
-let taskUrgency = document.querySelectorAll("#taskUrgency");
+let taskUrgency = document.querySelector("#taskUrgency");
 let urg = document.querySelector("#urg");
 let noturg = document.querySelector("#noturg");
 
 // stuck on last two steps
 function hide(){
 for (i =0; i < taskUrgency.length; i++) { // iterate through task
-    while () {
+  while (i  ) {
+      tas
+  }
     confirm("Do you want to delete clicked task");
 }
 
