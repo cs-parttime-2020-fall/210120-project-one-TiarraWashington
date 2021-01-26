@@ -1,5 +1,7 @@
 # 21 01 20 HTML CSS JS Project One
 
+https://cs-parttime-2020-fall.github.io/210120-project-one-TiarraWashington/
+
 ## Project Description
 The goal of this project is to build and deploy a to do application! The application will allow you to add and remove tasks from two separate lists; urgent and not urgent. You will give a 10 minute presentation on Monday 01/25 at 6:00 PM walking the class through your final site and speaking to one thing that you found difficult and one thing that you especially like about your site. You will also be asked a few coding questions about your solution. Following presentations the class will walk through the steps to host the site using [github pages](https://pages.github.com/). Your project will be graded using the rubric listed in the resources section below. 
 

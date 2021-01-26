@@ -11,13 +11,14 @@ let submitBtn = document.querySelector("#submitBtn");
 let taskUrgency = document.querySelector("#taskUrgency");
 console.log(taskUrgency);
 
-// stuck on last two steps
 function hide() {
    
     // iterate over items in the array
     for (i=0; i < taskUrgency.length; i++){
-        // forEach
-        taskUrgency.forEach(confirm => confirm("confirm if you want to remove clicked task"));
+        // 
+        // taskUrgency.forEach(taskUrgency =>  confirm("confirm if you want to remove clicked task"));
+    }
+}
 
     // used console log to make sure the correct elements are running in the browser
     console.log(taskAssigned); console.log(taskdueDate); console.log(taskUrgency);
@@ -52,5 +53,6 @@ function hide() {
     }
     // added an event listener that will output form submission
     submitBtn.addEventListener("click", submitForm);
+    // added event listener
     urgentTask.addEventListener("click", hide);
     notUrgent.addEventListener("click", hide);
